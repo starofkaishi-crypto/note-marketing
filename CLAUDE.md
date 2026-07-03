@@ -58,6 +58,20 @@ research-agent → 【ゲート1: ブリーフ承認】→ outline-agent → 【
 - 構成案・原稿: `articles/drafts/スラッグ/outline.md`, `draft.md`, `qa-report.md`
 - 公開パッケージ: `articles/published/スラッグ/final.md`, `promotion.md`
 
+## スマホ添削フロー(Google ドキュメント連携)
+
+ユーザーはスマホから GitHub を編集しづらいため、原稿の添削と体験談の記入は
+Google ドキュメント経由で行う。fileId は `assets/gdocs.md` で管理する。
+
+1. ゲート3(原稿確認)では、原稿を Google ドキュメントとして新規作成して
+   ユーザーに提示する(タイトル:【添削用】記事タイトル(vN)、text/markdown で作成)
+2. ユーザーがスマホで直接編集 or コメントを付け、「添削終わった」と伝えてくる
+3. read_file_content(includeComments: true)で読み取り、リポジトリの draft.md との
+   差分を確認して反映する。編集意図が曖昧な箇所は勝手に解釈せずユーザーに確認
+4. 反映後の原稿で再度添削が必要なら v2 ドキュメントを新規作成する
+5. 「体験談同期して」と言われたら、体験談ストックのドキュメントを読み取り、
+   assets/experiences.md に追記・整理する(内容の改変はしない)
+
 ## 起動コマンド
 
 - `/article <テーマ>` — パイプラインを最初から実行
