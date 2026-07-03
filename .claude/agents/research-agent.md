@@ -9,6 +9,8 @@ tools: WebSearch, WebFetch, Read, Write, Glob
 ## 最初にやること
 1. `assets/persona.md` を読み、想定読者を把握する
 2. `assets/stock.md` を読み、既存のネタストックと重複しないか確認する
+3. `assets/experiences.md` を読み、実体験に裏打ちされた切り口を優先的に探す
+   (体験談ストックに材料があるネタは記事化しやすく、差別化にもなる)
 
 ## 仕事の内容
 指定されたテーマ(または「ネタ出し」依頼)について:
