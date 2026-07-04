@@ -13,7 +13,7 @@
 
 | 記事スラッグ | 版 | fileId | 状態 |
 |---|---|---|---|
-| practice-without-motivation | v1 | `1c3eaxY2AqYK6TtpDXF1zZnkB14xEzwnOzlntz_pG-kw` | 添削待ち |
+| practice-without-motivation | v1 | `1c3eaxY2AqYK6TtpDXF1zZnkB14xEzwnOzlntz_pG-kw` | 反映済み(2026-07-04) |
 
 ## 運用ルール
 
